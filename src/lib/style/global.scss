@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+}
+
+body {
+    min-width: 1000px;
+}
+
+:root {
+    --color-darker: #272915;
+    --color-dark: #313a1a;
+    --color-accent: #BF4515;
+    --color-light: #d6e0e9;
+    --color-lighter: #FFFFFF;
+}
+
+.inter-light {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.libre-bodoni-regular {
+    font-family: "Libre Bodoni", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.libre-bodoni-semibold {
+    font-family: "Libre Bodoni", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.separator {
+    height: 10px;
+}
+
+.light {
+    background-color: var(--color-light);
+}
+
+.accent {
+    background-color: var(--color-accent);
+}
+
+.dark {
+    background-color: var(--color-dark);
+}
+
+.darker {
+    background-color: var(--color-darker);
+}
+
+.content {
+    width: 1000px;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+}
+
+.content.column {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content.row {
+    flex-direction: row;
+    gap: 40px;
+}
+
+
+// Nav bar styles
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 30px;
+
+    gap: 40px;
+    align-items: center;
+}
+
+.spacer {
+    flex: 1;
+}
+
+nav > a.main-name {
+    font-family: "Libre Bodoni", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+nav > a.nav-link {
+    font-family: "Libre Bodoni", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+
+    color: var(--color-darker);
+}
+
+nav > a.nav-link:hover {
+    text-decoration: underline;
+}
+
+nav > a.selected {
+    color: var(--color-accent);
+}
+
+a {
+    color: var(--color-dark);
+}
+
+a:hover {
+    color: var(--color-darker);
+}
+
+h2 {
+    font-family: "Libre Bodoni", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: var(--color-darker);
+}
+
+h3 {
+    font-family: "Libre Bodoni", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    // font-style: italic;
+    font-size: 24px;
+    color: var(--color-dark);
+
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--color-accent);
+}
+
+footer {
+    background-color: var(--color-dark);
+    color: var(--color-lighter);
+    padding: 5px;
+}
+
+footer > p {
+    font-size: 16px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.justify {
+    text-align: justify;
+}
