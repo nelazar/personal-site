@@ -56,7 +56,10 @@
         <div class="content column">
             <h2>Contact</h2>
             <div class="contact-list">
-                <p>You can reach me at noahbelazar (at) gmail (dot) com or on <a href="https://www.linkedin.com/in/noah-elazar/" target="_blank">LinkedIn</a>.</p>
+                <p>
+                    You can reach me at noahbelazar (at) gmail (dot) com or on <a href="https://www.linkedin.com/in/noah-elazar/" target="_blank">LinkedIn</a>.
+                    You can find my code on <a href="https://github.com/nelazar" target="_blank">my Github account</a>.
+                </p>
             </div>
         </div>
     </div>
