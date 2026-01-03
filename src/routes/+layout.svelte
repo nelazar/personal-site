@@ -14,5 +14,5 @@
 {@render children()}
 
 <footer>
-    <p>© 2025 Noah Elazar</p>
+    <p>© 2026 Noah Elazar</p>
 </footer>

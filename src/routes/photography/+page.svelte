@@ -1,3 +1,7 @@
+<head>
+    <title>Photography ∙ Noah Elazar</title>
+</head>
+
 <div class="photography">
     <nav>
         <a class="main-name" href="/">Noah Elazar</a>

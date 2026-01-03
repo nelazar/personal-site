@@ -1,3 +1,7 @@
+<head>
+    <title>Noah Elazar</title>
+</head>
+
 <div class="home">
     <div class="intro">
         <nav>

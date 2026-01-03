@@ -1,3 +1,7 @@
+<head>
+    <title>Projects ∙ Noah Elazar</title>
+</head>
+
 <div class="projects">
     <nav>
         <a class="main-name" href="/">Noah Elazar</a>
