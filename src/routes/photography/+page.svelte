@@ -8,7 +8,7 @@
 
 <div class="photography">
     <div class="menu">
-        <Menu page="projects" />
+        <Menu page="photography" />
     </div>
 
     <div class="gallery">
