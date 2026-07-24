@@ -1,15 +1,15 @@
+<script>
+    import Menu from "$lib/components/menu.svelte";
+
+</script>
 <head>
     <title>Photography ∙ Noah Elazar</title>
 </head>
 
 <div class="photography">
-    <nav>
-        <a class="main-name" href="/">Noah Elazar</a>
-        <div class="spacer"></div>
-        <a class="nav-link" href="/projects">Projects</a>
-        <a class="nav-link selected" href="/photography">Photography</a>
-        <a class="nav-link" href="/elazar-cv.pdf" target="_blank">CV</a>
-    </nav>
+    <div class="menu">
+        <Menu page="projects" />
+    </div>
 
     <div class="gallery">
         <div class="content column">
@@ -103,7 +103,7 @@
         width: 100%;
     }
 
-    nav {
+    .menu {
         background-color: var(--color-light);
     }
 
@@ -117,12 +117,5 @@
         max-height: 100%;
         width: auto;
         height: auto;
-    }
-
-    .side-by-side {
-        width: 1000px;
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
     }
 </style>

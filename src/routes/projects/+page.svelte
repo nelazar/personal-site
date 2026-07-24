@@ -1,15 +1,15 @@
+<script>
+    import Menu from "$lib/components/menu.svelte";
+
+</script>
 <head>
     <title>Projects ∙ Noah Elazar</title>
 </head>
 
 <div class="projects">
-    <nav>
-        <a class="main-name" href="/">Noah Elazar</a>
-        <div class="spacer"></div>
-        <a class="nav-link selected" href="/projects">Projects</a>
-        <a class="nav-link" href="/photography">Photography</a>
-        <a class="nav-link" href="/elazar-cv.pdf" target="_blank">CV</a>
-    </nav>
+    <div class="menu">
+        <Menu page="projects" />
+    </div>
 
     <div class="projects-list">
         <div class="content column">
@@ -17,7 +17,7 @@
         </div>
         <div class="content column">
             <h3>Retweets and Ideal Points: Political Ideology on Twitter/X</h3>
-            <div class="content row">
+            <div class="content row project">
                 <div class="blurb">
                     <p class="justify">
                         For my senior Honors thesis, I developed a quantitative measure of political ideology
@@ -34,6 +34,7 @@
                 </div>
                 <div class="visual">
                     <img
+                        class="project-img"
                         src="/projects/twt-score.png"
                         alt="A scatterplot displaying the ideological coordinates for members of Congress given
                             by my project. Democrats, in blue, are clustered to the left, 
@@ -44,7 +45,7 @@
             </div>
             <div></div>
             <h3>Socio-Spatial Disparities in Access to Driver Education for Teens</h3>
-            <div class="content row">
+            <div class="content row project">
                 <div class="blurb">
                     <p class="justify">
                         I utilized advanced spatial analysis techniques to measure the relationship
@@ -74,6 +75,7 @@
                 </div>
                 <div class="visual">
                     <img
+                        class="project-img"
                         src="/projects/driver-education.png"
                         alt="A map of Montgomery County, MD, shaded darker to indicate places where travel times
                         to driver training centers are longer. The locations of driver training centers are marked
@@ -85,7 +87,7 @@
             </div>
             <div></div>
             <h3>Rust Shocks</h3>
-            <div class="content row">
+            <div class="content row project">
                 <div class="blurb">
                     <p class="justify">
                         As an NSF REU student at Carnegie Mellon University, I measured the impact of a
@@ -104,6 +106,7 @@
                 </div>
                 <div class="visual">
                     <img
+                        class="project-img"
                         src="/projects/rust-shocks.png"
                         alt="A line graph showing the average commits per month for packages in the Rust ecosystem.
                         The packages are broken into control and treatment groups, where the treatment group represents
@@ -116,7 +119,7 @@
             </div>
             <div></div>
             <h3>Empirically Measuring the Mobility Outcomes of New Equity-Oriented Transit</h3>
-            <div class="content row">
+            <div class="content row project">
                 <div class="blurb">
                     <p class="justify">
                         In 2019, Philadelphia's SEPTA transit system introduced a new bus line connecting two
@@ -142,6 +145,7 @@
                 </div>
                 <div class="visual">
                     <img
+                        class="project-img"
                         src="/projects/urban-mobility.png"
                         alt="A set of density plots showing the personal mobility index of individuals surveyed
                         before and after the introduction of a new bus SEPTA bus line. The plots are separated by
@@ -153,7 +157,7 @@
             </div>
             <div></div>
             <h3>Parsing Congressional Hearing Transcripts</h3>
-            <div class="content row">
+            <div class="content row project">
                 <div class="blurb">
                     <p class="justify">
                         Professor Jenny Garcia at Oberlin College studies the words that members of Congress
@@ -169,6 +173,7 @@
                 </div>
                 <div class="visual">
                     <img
+                        class="project-img"
                         src="/projects/hearing-transcripts.png"
                         alt="A screenshot of the heading of a congressional hearing transcript."
                         width="500" height="340"
@@ -177,7 +182,7 @@
             </div>
             <div></div>
             <h3>Web Design for Difede Ramsdell Bender PLLC</h3>
-            <div class="content row">
+            <div class="content row project">
                 <div class="blurb">
                     <p class="justify">
                         I was hired to redesign the <a href="https://drb-law.com" target="_blank">website</a> of 
@@ -190,6 +195,7 @@
                 </div>
                 <div class="visual">
                     <img
+                        class="project-img"
                         src="/projects/drb-law.png"
                         alt="A screenshot of the home page of drb-law.com, the website for Difede Ramsdell Bender
                         PLLC. It shows a building, with the logo of the firm and the navigation bar placed in the
@@ -207,7 +213,7 @@
         width: 100%;
     }
 
-    nav {
+    .menu {
         background-color: var(--color-light);
     }
 

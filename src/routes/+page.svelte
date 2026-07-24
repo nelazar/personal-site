@@ -1,23 +1,28 @@
+<script>
+    import Menu from "$lib/components/menu.svelte";
+
+</script>
 <head>
     <title>Noah Elazar</title>
 </head>
 
 <div class="home">
     <div class="intro">
-        <nav>
+        <!-- <nav>
             <a class="main-name selected" href="/">Noah Elazar</a>
             <div class="spacer"></div>
             <a class="nav-link" href="/projects">Projects</a>
             <a class="nav-link" href="/photography">Photography</a>
             <a class="nav-link" href="/elazar-cv.pdf" target="_blank">CV</a>
-        </nav>
+        </nav> -->
+        <Menu page="home"/>
     </div>
 
     <div class="separator accent"></div>
 
     <div class="bio">
         <div class="content row">
-            <div class="headshot">
+            <div class="headshot center-when-mobile">
                 <img src="/headshot.jpg" alt="A headshot of Noah Elazar" width="200" height="200" />
             </div>
             <div class="blurb">

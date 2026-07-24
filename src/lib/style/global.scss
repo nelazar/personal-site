@@ -10,10 +10,6 @@
     font-size: 18px;
 }
 
-body {
-    min-width: 1000px;
-}
-
 :root {
     --color-darker: #272915;
     --color-dark: #313a1a;
@@ -63,21 +59,118 @@ body {
     background-color: var(--color-darker);
 }
 
-.content {
-    width: 1000px;
-    margin: auto;
-    padding: 40px 0;
-    display: flex;
+@media only screen and (max-width: 750px) {
+    .content {
+        margin: 0 20px;
+        padding: 20px 0;
+        display: flex;
+    }
+
+    .content.row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .content.row.project {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .center-when-mobile {
+        margin: auto;
+    }
+
+    .side-by-side {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .content {
+        width: 700px;
+        margin: auto;
+        padding: 40px 0;
+        display: flex;
+    }
+
+    .content.row {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .content.row.project {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .side-by-side {
+        width: 700px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .content {
+        width: 1000px;
+        margin: auto;
+        padding: 40px 0;
+        display: flex;
+    }
+
+    .content.row, .content.row.project {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .justify {
+        min-width: 500px;
+    }
+
+    .side-by-side {
+        width: 1000px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
 }
 
 .content.column {
     flex-direction: column;
     gap: 20px;
-}
-
-.content.row {
-    flex-direction: row;
-    gap: 40px;
 }
 
 
@@ -104,22 +197,25 @@ nav > a.main-name {
     text-decoration: none;
 }
 
-nav > a.nav-link {
+.nav-link {
     font-family: "Libre Bodoni", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
     text-decoration: none;
+    background: none;
+    border: none;
 
     color: var(--color-darker);
 }
 
-nav > a.nav-link:hover {
+.nav-link:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
-nav > a.selected {
+a.selected {
     color: var(--color-accent);
 }
 
